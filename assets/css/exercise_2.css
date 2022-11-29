@@ -1,0 +1,372 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
+  height: 80px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+.header__content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-text {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 2rem;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.header__logo-name {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__icon {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon-style {
+  font-size: 2.4rem;
+  color: #f26464;
+  margin-left: 16px;
+}
+
+/* Slider */
+#slider {
+  padding-top: 120px;
+}
+
+.slider__content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.slider__image {
+  max-width: 40%;
+  margin-right: 100px;
+}
+
+.slider__desc {
+  padding-right: 180px;
+}
+
+.slider__desc-title {
+  font-size: 1.6rem;
+  line-height: 6.4rem;
+}
+
+.slider__desc-text {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 60px;
+  color: #000;
+}
+
+.slider__desc-list {
+  display: flex;
+}
+
+.slider__desc-item {
+  margin-right: 60px;
+}
+
+.slider__desc-item-number {
+  display: block;
+  color: #f26464;
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.slider__desc-item-content {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* Container */
+.container__content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Container Devision */
+.container__devision {
+  margin: 60px 0 120px;
+}
+
+.container__devision-title,
+.container__skills-title,
+.container__works-title,
+.container__apps-title {
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  border-bottom: 3px solid #f26464;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+.container__devision-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__devision-section-para {
+  color: #373737;
+  font-size: 2.4rem;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.container__devision-section-btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #f26464;
+  padding: 16px 30px;
+  border: 2px solid #f26464;
+  border-radius: 60px;
+  background-color: #fff;
+}
+
+.container__devision-section-btn:hover {
+  background-color: #f26464;
+  color: #fff;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+/* Container Skill */
+
+.container__skills {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.container__skills-item {
+  width: 50%;
+}
+
+.container__skills-item:first-child {
+  padding-right: 40px;
+}
+
+.container__skills-item:last-child {
+  padding-left: 40px;
+}
+
+.container__skills-section {
+  margin: 16px 0;
+}
+
+.container__skills-section-item {
+  display: inline-block;
+  color: #373737;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 24px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* Container Work */
+.container__works {
+  margin-bottom: 80px;
+}
+
+.container__works-section {
+  display: flex;
+}
+
+.container__works-section-item {
+  width: 50%;
+}
+
+.container__works-section-item:first-child {
+  padding-right: 40px;
+}
+
+.container__works-section-item:last-child {
+  padding-left: 40px;
+}
+
+.section__item-time {
+  color: #373737;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+.section__item-name {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+.section__item-department {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.section__item-desc {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #333;
+}
+
+.section__item-desc p {
+  margin-bottom: 12px;
+}
+
+.section__item-desc li {
+  margin-bottom: 12px;
+}
+
+/* Container App */
+.container__apps {
+}
+
+.container__apps-list {
+}
+
+.container__apps-item {
+  display: flex;
+  padding: 40px 70px 0;
+  background-color: #f6f8fa;
+  margin-bottom: 40px;
+}
+
+.container__apps-item-content {
+  width: 60%;
+  padding-right: 160px;
+}
+
+.container__apps-item-title {
+  color: #000;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.container__apps-item-para {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.container__apps-item-image {
+  width: 40%;
+}
+
+#footer {
+  background-color: #000;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.footer__touch {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.footer__contact {
+  letter-spacing: 1.16px;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.footer__btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #f26464;
+  padding: 16px 30px;
+  border: 2px solid #f26464;
+  border-radius: 60px;
+  background-color: #000;
+  margin-bottom: 100px;
+}
+
+.footer__btn:hover {
+  background-color: #f26464;
+  color: #fff;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+.footer__copyright a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.footer__copyright a:hover {
+  color: #f26464;
+}
