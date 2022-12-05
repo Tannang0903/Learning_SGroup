@@ -265,12 +265,6 @@ body {
 }
 
 /* Container App */
-.container__apps {
-}
-
-.container__apps-list {
-}
-
 .container__apps-item {
   display: flex;
   padding: 40px 70px 0;
