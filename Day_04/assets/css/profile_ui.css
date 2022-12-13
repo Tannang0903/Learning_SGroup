@@ -400,8 +400,6 @@ html {
   display: flex;
   flex-direction: column-reverse;
 }
-.converse__content {
-}
 
 .converse__add-user i {
   width: 60px;
