@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+}
+
+.header__logo {
+  display: flex;
+  width: 24%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-image {
+  width: 48px;
+  height: 48px;
+}
+
+.header__logo-name {
+  font-size: 2.4rem;
+}
+
+.header__content {
+  width: 100%;
+}
+
+.header__content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__contact {
+  display: flex;
+}
+
+.header__contact-name {
+}
+
+.header__contact-list {
+  display: flex;
+}
+
+.header__contact-item {
+}
+
+.header__contact-link {
+}
+
+.header__contact-link i {
+}
+
+.header__action {
+  display: flex;
+}
+
+.header__action-login {
+}
+
+.header__action-register {
+}
+
+.header__action-translator {
+}
+
+.header__action-sidebar {
+}
+
+.header__action-title {
+}
+
+.header__content-navigation {
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+}
+
+.navigation__item-title {
+}
+
+.navigation__item i {
+}
