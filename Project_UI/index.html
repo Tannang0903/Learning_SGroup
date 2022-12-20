@@ -7,110 +7,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="./assets/img/Logo_Barca.jpg" alt="" class="header__logo-image">
+            <img src="./assets/img/Logo_Barca.png" alt="" class="header__logo-image">
             <span class="header__logo-name">FC BARCELONA</span>
         </div>
+
         <div class="header__content">
             <div class="header__content-top">
                 <div class="header__contact">
                     <span class="header__contact-name">FOLLOW FC BARCELONA</span>
                     <ul class="header__contact-list">
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://twitter.com/fcbarcelona" target="_blank" class="header__contact-link">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://www.facebook.com/fcbarcelona" target="_blank" class="header__contact-link">
                                 <i class="fa-brands fa-square-facebook"></i>
                             </a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://www.instagram.com/fcbarcelona/" target="_blank"
+                                class="header__contact-link">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://www.youtube.com/user/fcbarcelona" target="_blank"
+                                class="header__contact-link">
                                 <i class="fa-brands fa-youtube"></i>
                             </a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://www.tiktok.com/@fcbarcelona" target="_blank" class="header__contact-link">
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="" class="header__contact-link">
+                            <a href="https://www.twitch.tv/fcbarcelona" target="_blank" class="header__contact-link">
                                 <i class="fa-solid fa-message"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="header__action">
                     <div class="header__action-login">
                         <i class="fa-regular fa-user"></i>
-                        <span class="header__action-title">Login</span>
+                        <a href="#!" class="header__action-title">Login</a>
                     </div>
                     <div class="header__action-register">
-                        <span class="header__action-title">Register as a Culer</span>
+                        <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-register-logo">
+                        <a href="#!" class="header__action-title">Register as a Culer</a>
                     </div>
                     <div class="header__action-translator">
                         <span class="header__action-title">EN</span>
                         <i class="fa-solid fa-caret-down"></i>
+                        <div class="translator__sub">
+                            <sapn class="translator__sub-title">Choose your language</sapn>
+                            <ul class="translator__list">
+                                <li class="translator__item active">English</li>
+                                <li class="translator__item">Catala</li>
+                                <li class="translator__item">Castelano</li>
+                                <li class="translator__item">France</li>
+                                <li class="translator__item">Vietnamese</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="header__action-sidebar">
                         <span class="header__action-title">All Barca sites</span>
+                        <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-sidebar-logo">
                     </div>
                 </div>
             </div>
 
             <div class="header__content-navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item">
+                    <li class="navigation__item active">
                         <span class="navigation__item-title">FIRST TEAM</span>
                     </li>
                     <li class="navigation__item">
                         <span class="navigation__item-title">TICKETS & MUSEUM</span>
-                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="navigation__item-icon fa-solid fa-caret-down"></i>
+                        <div class="navigation__subitem">
+                            <ul class="subitem__chooses">
+                                <li class="subitem__chooses-item"><a href="#!">Men's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">VIP Men's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Tour & museum</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Basketball</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">VIP Basketball</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Women's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barcaland</a> </li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Atletic</a></li>
+                            </ul>
+
+                            <ul class="subitem__chooses">
+                                <li class="subitem__chooses-item"><a href="#!">Men's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">VIP Men's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Tour & museum</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Basketball</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">VIP Basketball</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Women's Football</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barcaland</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Atletic</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navigation__item">
                         <span class="navigation__item-title">SHOP</span>
-                        <i class="fa-solid fa-cart-plus"></i>
+                        <i class="navigation__item-icon fa-solid fa-cart-plus"></i>
                     </li>
                     <li class="navigation__item">
                         <span class="navigation__item-title">BARCA TV+</span>
-                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="navigation__item-icon fa-solid fa-caret-down"></i>
+                        <div class="navigation__subitem">
+                            <ul class="subitem__chooses">
+                                <li class="subitem__chooses-item"><a href="#!">Home</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Live TV</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">My List</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca & the World Cup</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Subscriptio & Prices</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navigation__item">
                         <span class="navigation__item-title">CLUB</span>
-                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="navigation__item-icon fa-solid fa-caret-down"></i>
+                        <div class="navigation__subitem">
+                            <ul class="subitem__chooses">
+                                <li class="subitem__chooses-item"><a href="#!">Espai Barca</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Lastest</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Culers</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Kids</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Schedule</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Members</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">More than a Club</a> </li>
+                                <li class="subitem__chooses-item"><a href="#!">Identity</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Partners</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">History</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Foundation</a> </li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Academy</a></li>
+                            </ul>
+
+                            <ul class="subitem__chooses">
+                                <li class="subitem__chooses-item"><a href="#!">Barca Innovation Hub</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">La Masia</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Documentation Centre</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Events</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Transparency</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Child prptection system</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Organisation</a> </li>
+                                <li class="subitem__chooses-item"><a href="#!">Sporting Management</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Press</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Facilities</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Services</a> </li>
+                                <li class="subitem__chooses-item"><a href="#!">Contact</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navigation__item">
                         <span class="navigation__item-title">BARCA TEAMS</span>
-                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="navigation__item-icon fa-solid fa-caret-down"></i>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
+
     <nav class="navbar">
-
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#!">Latest</a></li>
+            <li class="navbar__item"><a href="#!">Schedule</a></li>
+            <li class="navbar__item"><a href="#!">Tickets</a></li>
+            <li class="navbar__item"><a href="#!">Results</a></li>
+            <li class="navbar__item"><a href="#!">Standings</a></li>
+            <li class="navbar__item active"><a href="#!">Players</a></li>
+            <li class="navbar__item"><a href="#!">Photos</a></li>
+            <li class="navbar__item"><a href="#!">Honours</a></li>
+            <li class="navbar__item"><a href="#!">Features</a></li>
+        </ul>
     </nav>
+
     <div class="slider">
-
+        <img src="./assets/img/slider.jpg" alt="" class="slider__image">
+        <h1 class="slider__text">FC Barcelona - First Team</h1>
     </div>
-    <div class="container">
 
+    <div class="container">
+        <div class="container__content">
+            <div class="container__heading">
+                <h2 class="container__heading-name">FC Barcelona First Team</h2>
+                <div class="container__heading-contact">
+                    <span class="container__heading-contact-text">PRESENTED BY</span>
+                    <a href="#!">
+                        <img src="./assets/img/contact_heading.png" alt="" class="container__heading-contact-img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container__navigation">
+                <ul class="container__navigation-list">
+                    <li class="container__navigation-item">
+                        <a href="" class="container__navigation-link">GOALKEEPERS</a>
+                    </li>
+                    <li class="container__navigation-item">
+                        <a href="" class="container__navigation-link">DEFENDERS</a>
+                    </li>
+                    <li class="container__navigation-item">
+                        <a href="" class="container__navigation-link">MIDFIELDERS</a>
+                    </li>
+                    <li class="container__navigation-item">
+                        <a href="" class="container__navigation-link">FORWARDS</a>
+                    </li>
+                    <li class="container__navigation-item">
+                        <a href="" class="container__navigation-link">COACHING STAFF</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container__part">
+                <h2 class="container__title">Goalkeepers</h2>
+                <div class="container__members">
+                    <div class="row">
+                        <div class="col c-4">
+                            <div class="container__member-item">
+                                <img src="./assets/img/01-MARC-ANDRE_TER_STEGEN.png" alt=""
+                                    class="container__member-img">
+                                <div class="container__member-info">
+                                    <p class="container__member-name">1 MARC ANDRE TER STEGEN</p>
+                                    <p class="container__member-position">Goalkeepers</p>
+                                    <div class="container__member-desc">
+                                        <div class="achievements__list">
+                                            <div class="achievements__item">
+                                                <span class="achievements__item-title"></span>
+                                                <span class="achievements__item-quantities"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col c-4">
+                            <div class="container__member-item">
+                                <img src="./assets/img/26-INAKI_PENA.png" alt="" class="container__member-img">
+                                <div class="container__member-info">
+                                    <p class="container__member-name">1 MARC ANDRE TER STEGEN</p>
+                                    <p class="container__member-position">Goalkeepers</p>
+                                    <div class="container__member-desc">
+                                        <div class="achievements__list">
+                                            <div class="achievements__item">
+                                                <span class="achievements__item-title"></span>
+                                                <span class="achievements__item-quantities"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
 

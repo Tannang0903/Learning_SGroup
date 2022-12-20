@@ -169,12 +169,11 @@ body {
 .container__devision-section-btn:hover {
   background-color: #f26464;
   color: #fff;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
   cursor: pointer;
 }
 
 /* Container Skill */
-
 .container__skills {
   display: flex;
   margin-bottom: 90px;
@@ -297,6 +296,7 @@ body {
   width: 40%;
 }
 
+/* Footer */
 #footer {
   background-color: #000;
   padding: 100px 0;
@@ -352,7 +352,7 @@ body {
 .footer__btn:hover {
   background-color: #f26464;
   color: #fff;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
   cursor: pointer;
 }
 

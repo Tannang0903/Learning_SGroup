@@ -1,0 +1,20 @@
+@media (min-width: 768px) and (max-width: 1080px) {
+  .navigation__list {
+    display: none;
+  }
+
+  .header__action-user,
+  .header__action-search-none,
+  .header__action-bar {
+    display: block;
+  }
+
+  .header__action-search,
+  .header__action-login {
+    display: none;
+  }
+
+  .header__action-none {
+    display: flex;
+  }
+}
