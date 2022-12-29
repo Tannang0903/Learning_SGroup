@@ -10,7 +10,7 @@ function findEvenNumber(array) {
 const btnArray = document.getElementById("btnArray");
 btnArray.addEventListener("click", () => {
   let array = document.getElementById("inputArray").value.split(" ");
-  console.log(findEvenNumber(array));
+  alert(findEvenNumber(array));
 });
 
 function listFibonacci(number) {
@@ -22,5 +22,5 @@ function listFibonacci(number) {
 const btnFibo = document.getElementById("btnFibo");
 btnFibo.addEventListener("click", () => {
   let number = parseInt(document.getElementById("inputFibo").value);
-  console.log(listFibonacci(number));
+  alert(listFibonacci(number));
 });
