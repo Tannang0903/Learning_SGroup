@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FC - Barcelona</title>
     <link rel='shortcut icon' href='./assets/img/Logo_Barca.png' />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/donors.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -28,7 +33,15 @@
         <div class="header__content">
             <div class="header__content-top">
                 <div class="header__contact">
+                    <div class="header__logo-top">
+                        <a href="https://www.fcbarcelona.com/en/" class="header__logo-link">
+                            <img src="./assets/img/Logo_Barca.png" alt="" class="header__logo-image">
+                            <span class="header__logo-name">FC BARCELONA</span>
+                        </a>
+                    </div>
+
                     <span class="header__contact-name">FOLLOW FC BARCELONA</span>
+                    <span class="header__contact-name-tablet">FOLLOW</span>
                     <ul class="header__contact-list">
                         <li class="header__contact-item">
                             <a href="https://twitter.com/fcbarcelona" target="_blank" class="header__contact-link">
@@ -66,19 +79,19 @@
                 </div>
 
                 <div class="header__action">
-                    <div class="header__action-login">
+                    <div class="header__action-item" id="login">
                         <i class="fa-regular fa-user"></i>
                         <a href="#!" class="header__action-title">Login</a>
                     </div>
-                    <div class="header__action-register">
+                    <div class="header__action-item" id="register">
                         <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-register-logo">
                         <a href="#!" class="header__action-title">Register as a Culer</a>
                     </div>
-                    <div class="header__action-translator">
+                    <div class="header__action-item" id="translator">
                         <span class="header__action-title">EN</span>
                         <i class="fa-solid fa-caret-down"></i>
                         <div class="translator__sub">
-                            <sapn class="translator__sub-title">Choose your language</sapn>
+                            <span class="translator__sub-title">Choose your language</span>
                             <ul class="translator__list">
                                 <li class="translator__item active">English</li>
                                 <li class="translator__item">Catala</li>
@@ -88,7 +101,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header__action-sidebar">
+                    <div class="header__action-item" id="sidebar">
                         <span class="header__action-title">All Barca sites</span>
                         <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-sidebar-logo">
                     </div>
@@ -240,6 +253,39 @@
         </div>
     </header>
 
+    <header class="header__tablet">
+        <div class="header__tablet-top">
+            <div class="header__sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header__logo-tablet">
+                <a href="https://www.fcbarcelona.com/en/" class="header__logo-link">
+                    <img src="./assets/img/Logo_Barca.png" alt="" class="header__logo-image">
+                    <span class="header__logo-name">FC BARCELONA</span>
+                </a>
+            </div>
+            <div class="header__action-item" id="register">
+                <i class="fa-regular fa-user"></i>
+                <a href="#!" class="header__action-title">Culers</a>
+            </div>
+        </div>
+
+        <div class="header__tablet-navbar">
+            <div class="header__tablet-navigation-item">
+                <i class="fa-solid fa-ticket"></i>
+                <span class="tablet__navigation-item-title">Tickets & Museum</span>
+            </div>
+            <div class="header__tablet-navigation-item">
+                <i class="fa-solid fa-shirt"></i>
+                <span class="tablet__navigation-item-title">Shop</span>
+            </div>
+            <div class="header__tablet-navigation-item">
+                <i class="fa-solid fa-tv"></i>
+                <span class="tablet__navigation-item-title">Barca TV+</span>
+            </div>
+        </div>
+    </header>
+
     <nav class="navbar">
         <ul class="navbar__list">
             <li class="navbar__item"><a href="#!">Latest</a></li>
@@ -296,7 +342,7 @@
                 <h2 class="container__title">Goalkeepers</h2>
                 <div class="container__members">
                     <div class="row">
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/01-Marc_Andre_Ter_Stegen.png" alt=""
                                     class="container__member-img">
@@ -339,7 +385,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/26-Inaki_Pena.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">PENA</div>
@@ -381,7 +427,7 @@
                 <h2 class="container__title">Defenders</h2>
                 <div class="container__members">
                     <div class="row">
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/02-Hector_Bellerin.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">BELLERIN</div>
@@ -409,7 +455,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/04-Ronald_Araujo.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">ARAUJO</div>
@@ -451,7 +497,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/15-Andreas_Christensen.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">CHRISTENSEN</div>
@@ -479,7 +525,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/17-Marcos_Alonson.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">ALONSO</div>
@@ -514,7 +560,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/18-Jordi_Alba.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">ALBA</div>
@@ -556,7 +602,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/23-Jules_Kounde.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">KOUNDE</div>
@@ -591,7 +637,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/24-Eric_Garcia.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">GARCIA</div>
@@ -640,7 +686,7 @@
                 <h2 class="container__title">Midfielders</h2>
                 <div class="container__members">
                     <div class="row">
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/05-Sergio_Busquets.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Busquets</div>
@@ -682,7 +728,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/08-Pedri.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Pedri</div>
@@ -724,7 +770,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/19-Franck_kessie.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Kessie</div>
@@ -759,7 +805,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/20-Sergi_Roberto.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Roberto</div>
@@ -801,7 +847,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/21-Frenkie_De_Jong.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Jong</div>
@@ -843,7 +889,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/30-Gavi.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Gavi</div>
@@ -892,7 +938,7 @@
                 <h2 class="container__title">Forwards</h2>
                 <div class="container__members">
                     <div class="row">
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/07-Ousmane_Dembele.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Dembele</div>
@@ -934,7 +980,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/09-Robert_Lewandowski.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Lewandowski</div>
@@ -976,7 +1022,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/10-Ansu_Fati.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Fati</div>
@@ -1018,7 +1064,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/11-Ferran_Torres.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Torres</div>
@@ -1060,7 +1106,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/14-Memphis_Depay.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Depay</div>
@@ -1102,7 +1148,7 @@
                             </a>
                         </div>
 
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/22-Raphinha.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">Raphinha</div>
@@ -1152,7 +1198,7 @@
                 <h2 class="container__title">Coaching Staff</h2>
                 <div class="container__members">
                     <div class="row">
-                        <div class="col c-4">
+                        <div class="col c-6 m-4 l-4">
                             <a href="#!" class="container__member-item">
                                 <img src="./assets/img/00-Xavi.png" alt="" class="container__member-img">
                                 <div class="container__member-user-name">XAVI</div>
