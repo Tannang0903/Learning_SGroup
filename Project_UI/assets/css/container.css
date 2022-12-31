@@ -5,7 +5,7 @@
 }
 
 .container__content {
-  margin: 0 24px;
+  margin: 0 16px;
   border-radius: 16px;
   background-color: #fff;
   overflow: hidden;
@@ -127,7 +127,8 @@
   font-size: 9rem;
   font-weight: 800;
   color: #fff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   opacity: 0.5;
   transition: all 0.3s linear;
   text-align: center;
@@ -240,10 +241,12 @@
 .achievements__coach-position,
 .achievements__coach-name {
   width: 50%;
-  height: 48px;
+  min-height: 48px;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ededed;
   text-align: center;
   margin-bottom: 4px;
@@ -265,11 +268,11 @@
 .container__trophies-item {
   display: flex;
   align-items: center;
-  width: 25%;
   height: 100px;
   background-image: url(../img/background_cup.jpg);
   margin: 0 8px;
   text-decoration: none;
+  margin-bottom: 24px;
 }
 
 .container__trophies-item-content {
@@ -296,6 +299,7 @@
 }
 
 .container__trophies-image {
+  display: block;
   max-width: 66px;
 }
 
@@ -329,10 +333,14 @@
   .achievements__item-quantities {
     font-size: 1.6rem;
   }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1100px) {
-  /* Container */
   .container__content {
     margin: 0 16px;
   }
@@ -344,11 +352,32 @@
   /* Container - Part */
   .container__member-user-name {
     font-size: 6rem;
+  }
+
+  .achievements__item-title {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    font-size: 0.8rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
 @media (min-width: 840px) and (max-width: 1024px) {
-  /* Container */
   .container__content {
     margin: 0 16px;
   }
@@ -361,10 +390,176 @@
   .container__member-user-name {
     font-size: 6rem;
   }
+
+  .achievements__item-title {
+    font-size: 0.9rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    display: none;
+  }
+
+  .achievements__item-quantities {
+    display: none;
+  }
+
+  .container__member-info {
+    transform: translateY(70px);
+  }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 840px) {
+  .container__content {
+    margin: 0 8px;
+  }
+
+  .container__heading {
+    padding: 16px 16px 0;
+  }
+
+  .container__heading-name {
+    font-size: 1.4rem;
+  }
+
+  .container__heading-contact {
+    flex-direction: column;
+  }
+
+  .container__heading-contact-text {
+    border-right: none;
+    margin: 0;
+  }
+
+  .container__heading-contact-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .container__part {
+    padding: 0 12px;
+  }
+
+  .container__navigation-item {
+    margin: 0 3px;
+  }
+
+  .container__navigation-link {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .container__trophies {
+    display: flex;
+    padding: 12px;
+  }
+
+  .container__trophies-item {
+    height: 188px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .container__trophies-item-content {
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .container__trophies-image {
+    max-width: 360px;
+    height: 66px;
+  }
+
+  .container__trophies-name,
+  .container__trophies-type {
+    margin: 8px 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .container__trophies-count {
+    margin: 0;
+  }
+
+  .achievements__item-title {
+    font-size: 0.9rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    font-size: 0.8rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container__content {
+    margin: 0;
+  }
+
+  .container__title {
+    font-size: 2.4rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.5rem;
+    padding: 0 4px;
+  }
+
+  .container__navigation-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 500px) {
+  .container__title {
+    font-size: 1.8rem;
+  }
+
+  .achievements__item-title {
+    font-size: 1rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.6rem;
+  }
+
+  .achievements__item-season {
+    font-size: 1rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.3rem;
+    padding: 0 4px;
+  }
 }

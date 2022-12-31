@@ -1,8 +1,10 @@
-/* Header */
 .header {
   display: flex;
   width: 100%;
   height: 120px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 15;
 }
 
 /* Header - Logo */
@@ -110,13 +112,15 @@
   color: #9d9da9;
   font-size: 1rem;
   font-weight: 700;
-  margin: 4px 12px 0;
+  margin: 0 12px;
   cursor: context-menu;
   user-select: none;
 }
 
 .header__contact-name-tablet {
   display: none;
+  cursor: context-menu;
+  user-select: none;
 }
 
 .header__contact-list {
@@ -447,6 +451,7 @@
 .header__sidebar i {
   font-size: 1.8rem;
   color: #fff;
+  padding: 12px 24px 12px 0;
 }
 
 .header__tablet-navbar {
@@ -462,7 +467,9 @@
 .header__tablet-navigation-item {
   position: relative;
   width: 33.33%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__tablet-navigation-item::before {
@@ -478,9 +485,9 @@
 }
 
 .header__tablet-navigation-item i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .tablet__navigation-item-title {
@@ -512,7 +519,7 @@
 
   /* Header - Content - TOP */
   .header__contact-name {
-    margin: 2px 12px 0;
+    margin: 0 12px;
     font-size: 0.9rem;
   }
   .header__contact-link i {
@@ -597,9 +604,9 @@
   .header__contact-name-tablet {
     display: block;
     color: #9d9da9;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin: 0px 6px 0;
+    margin: 0 8px 0 16px;
     cursor: context-menu;
     user-select: none;
   }
@@ -799,4 +806,24 @@
 }
 
 @media (max-width: 500px) {
+  .header__logo-image {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__logo-name {
+    font-size: 1.8rem;
+  }
+
+  .header__action-item i {
+    font-size: 1.2rem;
+  }
+
+  .header__action-title {
+    font-size: 1.2rem;
+  }
+
+  .tablet__navigation-item-title {
+    font-size: 1.2rem;
+  }
 }
