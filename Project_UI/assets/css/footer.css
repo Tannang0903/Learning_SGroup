@@ -5,8 +5,11 @@
 
 .footer__summary {
   display: flex;
-
   padding: 0 16px;
+}
+
+.footer__summary-part {
+  margin-bottom: 8px;
 }
 
 .footer__part-title {
@@ -21,7 +24,7 @@
 }
 
 .footer__part-item {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .footer__part-item:hover a {

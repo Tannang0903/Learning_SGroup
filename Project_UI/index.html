@@ -102,8 +102,76 @@
                         </div>
                     </div>
                     <div class="header__action-item" id="sidebar">
-                        <span class="header__action-title">All Barca sites</span>
-                        <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-sidebar-logo">
+                        <div id="sidebarOpen">
+                            <span class="header__action-title">All Barca sites</span>
+                            <img src="./assets/img/Logo_Barca.png" alt="" class="header__action-sidebar-logo">
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="sidebar ">
+                            <div class="sidebar__header">
+                                <span class="sidebar__header-title">All Barca sites</span>
+                                <i class="sidebar__header-icon fa-solid fa-x"></i>
+                            </div>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#!" class="sidebar__link">
+                                        <span class="sidebar__link-name">Barca Academy</span>
+                                        <p class="sidebar__link-desc">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Repudiandae eos tempore voluptates</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,7 +315,14 @@
                         </div>
                     </li>
                     <li class="navigation__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="icon-open fa-solid fa-magnifying-glass" id="search-btn"></i>
+                        <i class="icon-close none fa-solid fa-x none" id="search-btnRemove"></i>
+                        <form action="" class="search__form" id="search-form">
+                            <i class="search__form-icon fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search FC Barcelona for teams, players, news and videos"
+                                class="search__form-input">
+                            <input type="button" value="Search now" class="search__form-btn">
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -256,18 +331,109 @@
 
     <header class="header__tablet">
         <div class="header__tablet-top">
-            <div class="header__sidebar">
+            <div class="header__sidebar" id="navbarBtnOpen">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
+            <div class="middle__nav">
+                <div class="middle__nav-header">
+                    <div class="middle__nav-search">
+                        <input type="text" id="" class="middle__nav-input"
+                            placeholder="Search FC Barcelona for teams, players, news and videos">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="middle__nav-close" id="navbarBtnClose">
+                        <i class="fa-solid fa-x"></i>
+                        <span class="middle__nav-close-text">CLOSE</span>
+                    </div>
+                </div>
+
+                <div class="middle__nav-content">
+                    <div class="middle__first__navigation">
+                        <ul class="middle__first__navigation-list">
+                            <li class="middle__first__navigation-item">
+                                <img src="./assets/img/Logo_Barca.png" alt="" class="middle__first__navigation-image">
+                                <span class="middle__nav-name-club">FC BARCELONA</span>
+                            </li>
+                            <li class="middle__first__navigation-item active">FIRST TEAM</li>
+                            <li class="middle__first__navigation-item">TICKETS & MUSEUM</li>
+                            <li class="middle__first__navigation-item">SHOP</li>
+                            <li class="middle__first__navigation-item">BARÇA TV+</li>
+                            <li class="middle__first__navigation-item">CLUB</li>
+                            <li class="middle__first__navigation-item">BARÇA TEAMS</li>
+                            <li class="middle__first__navigation-item">BARÇA APP</li>
+                        </ul>
+
+                        <ul class="middle__first__navigation-details">
+                            <li class="middle__first__navigation-details-item">BARÇA ON SOCIAL</li>
+                            <li class="middle__first__navigation-details-item">ALL BARÇA SITES</li>
+                        </ul>
+                    </div>
+
+                    <div class="middle__second__navigation">
+                        <ul class="middle__second__navigation-list">
+                            <li class="middle__second__navigation-item title">
+                                <a href="#!">First Team</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Latest</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Schedule</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Tickets</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Results</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Standings</a>
+                            </li>
+                            <li class="middle__second__navigation-item active">
+                                <a href="#!">Players</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Photos</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Honours</a>
+                            </li>
+                            <li class="middle__second__navigation-item">
+                                <a href="#!">Features</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="middle__nav-footer">
+                    <span>EN</span>
+                    <i class="fa-solid fa-caret-up"></i>
+                </div>
+            </div>
+
             <div class="header__logo-tablet">
                 <a href="https://www.fcbarcelona.com/en/" class="header__logo-link">
                     <img src="./assets/img/Logo_Barca.png" alt="" class="header__logo-image">
                     <span class="header__logo-name">FC BARCELONA</span>
                 </a>
             </div>
-            <div class="header__action-item" id="register">
+            <div class="header__action-item" id="SignBtn">
                 <i class="fa-regular fa-user"></i>
-                <a href="#!" class="header__action-title">Culers</a>
+                <div class="header__action-title">Culers</div>
+            </div>
+
+            <div class="header__action-sign">
+                <a href="#!" class="action__sign-in">
+                    <i class="action__sign-icon fa-regular fa-user"></i>
+                    <span class="action__sign-text">Login</span>
+                </a>
+
+                <a href="#!" class="action__sign-up">
+                    <img src="./assets/img/Logo_Barca.png" alt="" class="action__sign-image">
+                    <span class="action__sign-text">Register as a Culer</span>
+                    <i class="fa-solid fa-x" id="signBtnClose"></i>
+                </a>
             </div>
         </div>
 
@@ -286,6 +452,8 @@
             </div>
         </div>
     </header>
+
+
 
     <nav class="navbar">
         <ul class="navbar__list">
@@ -1191,7 +1359,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -1376,6 +1543,7 @@
             </div>
         </div>
     </div>
+
     <footer class="footer">
         <div class="footer__summary row">
             <div class="footer__summary-part col l-1_4 m-3 c-6">
@@ -1488,6 +1656,7 @@
 
         <div class="footer__footer"></div>
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
