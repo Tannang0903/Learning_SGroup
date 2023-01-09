@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#inputForm {
+  border: 2px solid #000;
+  width: 800px;
+  padding: 16px;
+}
+
+.item {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+#btnSubmit {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+
+#renderTable {
+  border-collapse: collapse;
+  width: 1200px;
+  margin-top: 32px;
+}
+
+thead tr {
+  background-color: #ddd;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+#remove:hover {
+  cursor: pointer;
+  color: #aaa;
+}
